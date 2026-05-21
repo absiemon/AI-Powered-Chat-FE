@@ -1,16 +1,18 @@
-# React + Vite
+# Intro
+A simple chat window. You type, hit send, and see the AI reply stream in like a typewriter. Each AI reply also shows two
+small badges underneath — the detected intent and sentiment of your message. The conversation resets on page
+refresh, which matched the scope I wanted: keep things in-memory, no localStorage, fresh start every time.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tech stack
+Framework  - React 18 with JavaScript (kept it consistent with the JS backend)
+Build tool - Vite (fast dev server, near-instant hot reload)
+UI library - Mantine v8 — polished components without writing much CSS
+Icons - Tabler Icons
+HTTP client - Axios with a small wrapper module
+Markdown - How the code is organised react-markdown + remark-gfm (tables, code blocks, etc.)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Env
+```
+VITE_API_BASE_URL=
+DEV_BACKEND_URL=http://localhost:8000
+```
