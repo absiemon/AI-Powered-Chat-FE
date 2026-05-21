@@ -1,0 +1,19 @@
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f7fa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Removes the default focus outline on buttons; Mantine adds its own */
+button:focus {
+  outline: none;
+}
