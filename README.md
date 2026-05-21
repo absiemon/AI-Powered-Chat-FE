@@ -16,3 +16,23 @@ Markdown - How the code is organised react-markdown + remark-gfm (tables, code b
 VITE_API_BASE_URL=
 DEV_BACKEND_URL=http://localhost:8000
 ```
+
+# Setup instruction
+Step-1:- Clone the repository
+```
+git clone https://github.com/absiemon/AI-Powered-Chat-FE.git
+```
+Step-2:- Get into the root directory(parallel to src) and install the packages.
+```
+npm install
+```
+Step-3:- Create a .env file in root directory(parallel to src). Copy the env example given above and paste into it.
+
+<img width="1322" height="382" alt="image" src="https://github.com/user-attachments/assets/a0eea496-cb75-4597-aa34-643c6a232498" />
+
+
+
+Step-4:- Start the server 
+```
+npm run dev
+```
