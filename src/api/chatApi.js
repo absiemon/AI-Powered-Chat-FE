@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: import.meta.env.DEV_BACKEND_URL || '',
+  baseURL: import.meta.env.VITE_API_BASE_URL || '',
   timeout: 30_000, // generous — covers Gemini latency + retries
   headers: { 'Content-Type': 'application/json' },
 });
